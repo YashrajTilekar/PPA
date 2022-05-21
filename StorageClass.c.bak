@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+void Demo()
+{
+int A=10;
+A++;
+printf("%d \n", A);  // %d mahnje d for decimal
+
+}
+
+void Hello()
+{
+	static int A=10;
+    A++;
+    printf("%d \n", A);
+}
+
+int main()
+{
+	Demo();          // Function call
+	Demo();
+	
+	Hello();
+	Hello();
+	
+	return 0;
+}
